@@ -1,1 +1,10 @@
-
+{
+    "version": 2,
+    "name": "dynamic-web",
+    "builds": [
+       { "src": "app.js", "use": "@vercel/node" }
+    ],
+    "routes": [
+       { "src": "/(.*)", "dest": "/app.js" }
+    ]
+ }
